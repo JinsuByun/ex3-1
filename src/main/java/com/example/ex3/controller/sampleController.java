@@ -59,7 +59,7 @@ public class sampleController {
         log.info("ex3() 호출됨");
     }
 
-    @GetMapping("/exLayout")
+    @GetMapping({"/exLayout", "/exTemplate", "exSidebar"})
     public void exLayout1(){
         log.info("exLayout() 호출됨");
     }
@@ -73,5 +73,6 @@ public class sampleController {
     public void exLayout3(){
         log.info("exLayout() 호출됨");
     }
+
 
 }
